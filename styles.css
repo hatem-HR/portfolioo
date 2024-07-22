@@ -24,6 +24,13 @@ a{
 .text-primary{
     color: #20c997;
 }
+.container {
+    max-width: 1100px;
+    margin:auto;
+    padding: 0 2rem;
+}
+
+
 /*header start */
 header{
     background-color:#ecf0f3;
@@ -71,12 +78,7 @@ align-items: center;
 
 }
 
-header.header-content .content-text{
 
-}
-header .header-content img{
-    max-width: 400px;
-}
 
 
 #home .header-content p span{
@@ -118,7 +120,7 @@ transition:all 0.3s ease;
     .btn-primary {
         background-color: #20c997;
         border: none;
-        colsor: #fff;
+        color: #fff;
         padding: 10px 20px;
         text-align: center;
         text-decoration: none;
@@ -130,30 +132,73 @@ transition:all 0.3s ease;
     .btn-primary:hover{
         background-color: #15a076;
     }
-    .container{
-        margin:auto; 
+
+    header .header-content img{
+        max-width: 400px;
     }
-    #about{
-        padding:100px;
+    /* header end */
+    /* about start */
+    #about,
+    #skills {
+        padding: 6rem 0;
     }
-    #about h2{
+    #about h2,
+     #skills h2 {
         text-align: center;
-        color: #003C43;
+        font-size: 38px;
+        color:#033b4a;
+        font-weight:600;
+        letter-spacing: 1px;
     }
-    #about .aboutcontenu{
-      border: 3px solid #fff;
-      padding:20px;
+    #about hr, #skills hr{
+        width: 100px;
+        height:3px;
+        background-color:#20c997;
+        border: none;
+        margin:5px auto 0;
     }
-    .contenu1 {
-        width: 50%;
-        float: left;
-        padding: 20px;
-        text-align: center;
-        
+    #about .about-content{
+        margin-top: 4rem;
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 3rem;
     }
-    h2{
-        padding:40px 40px;
+    #about .about-content .col-1 h3{
+font-size: 28px;
+color:#033b4a;
+margin-bottom: 28px;
     }
-    html{ 
-        scroll-behavior: smooth;
+    #about .about-content .col-1 p{
+        color:gray;
+        margin-bottom:20px ;
+        line-height: 1.8;
     }
+    #about .about-content .col-2 p{
+        color: gray;
+        margin-bottom: 28px;
+        padding-bottom:5px;
+        border-bottom: 1px ;
+    }
+    #skills{
+        background-color:#033b4a ;
+    }
+    #skills h2{
+        color:#fff;
+        font-family:'poppins','sans-serif;'
+
+    }
+    #skills .skills-content .row{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;  
+      text-align: center;
+    }
+
+    #skills .row img{
+        max-width:40px
+    }
+
+    /* about end */
+/*skills start */
+
+
