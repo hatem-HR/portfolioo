@@ -193,9 +193,25 @@ margin-bottom: 28px;
       align-items: center;  
       text-align: center;
     }
+    #skills .skills-content .row .item{
+        color: #fff;
+        background: black;
+        margin:20px;
+        padding: 1rem;
+        border-radius: 10px;
+        font: size 18px; ;
+        font-weight: 600;
+        transition: all 0.3s;
+
+    }
 
     #skills .row img{
         max-width:40px
+    }
+     
+    /*resizing logod one by one ( to do)*/
+    #skills .skills-content .row .item:hover{
+       box-shadow: 10px  10px 10px #ffffff0c;
     }
 
     /* about end */
